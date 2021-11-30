@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
-// import client from "../client.js";
 import axios from "axios";
 import "./SingleRecipe.css";
 
@@ -36,10 +34,13 @@ const SingleRecipe = () => {
         </div>
 
         {/* <div className="date">{recipies.date}</div> */}
-        <div className="date">{recipies.ingredients}</div>
+        <div
+          className="date"
+          dangerouslySetInnerHTML={{ __html: recipies.ingredients }}
+        ></div>
 
         <div className="description">
-          <p>{recipies.recipe}</p>
+          <p dangerouslySetInnerHTML={{ __html: recipies.recipe }}></p>
         </div>
       </div>
     </div>
