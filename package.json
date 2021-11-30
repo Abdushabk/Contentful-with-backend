@@ -19,7 +19,7 @@
     "web-vitals": "^1.1.2",
     "webpack": "4.46.0"
   },
-  "homepage": "https://abdushabk.github.io/Contentful-project",
+  "homepage": "https://vrw-gh.github.io/Contentful-with-backend/",
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start ",
     "build": "react-scripts build",
