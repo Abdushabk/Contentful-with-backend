@@ -6,7 +6,6 @@ import axios from "axios";
 const MealTime = () => {
   const { mealtime } = useParams();
   const [posts, setPosts] = useState([]);
-  // const [total, setTotal] = useState(0);
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -32,7 +31,6 @@ const MealTime = () => {
       </p>
 
       {posts.map((post) => (
-        // <Post key={post.sys.id} post={post} />
         <Post key={post.slug} post={post} />
       ))}
     </div>

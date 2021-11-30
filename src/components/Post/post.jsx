@@ -13,22 +13,21 @@ export default function Post({ post, handleClearQry }) {
 
   return (
     <div className="post">
-      <div className="imgCon">
-        <img
-          className="postImg"
-          // src={post.fields.headImg.fields.file.url}
-          src={post.image}
-          alt="img"
-        />
-      </div>
-      <div className="postInfo">
-        <Link to={`/recipe/${post.slug}`} onClick={handleClearQry}>
-          <span className="postTitle">{post.title}</span>
-        </Link>
-        <hr />
-        <span className="postDate"></span>
-      </div>
-      {/*     <p className="postDesc" dangerouslySetInnerHTML={{__html: postToHTML}}></p> */}
+      <Link to={`/recipe/${post.slug}`} onClick={handleClearQry}>
+        <div className="imgCon">
+          <img
+            className="postImg"
+            // src={post.fields.headImg.fields.file.url}
+            src={post.image}
+            alt="img"
+          />
+        </div>
+        <div className="postInfo">
+            <span className="postTitle">{post.title}</span>
+          <hr />
+          <span className="postDate"></span>
+        </div>
+      </Link>
     </div>
   );
 }

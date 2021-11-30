@@ -44,16 +44,16 @@ const NavbarTop = ({ handleSearchClick, handleClearQry, categories }) => {
                 <NavLink to={subMenu(index)} onClick={handleClearQry}>{subMenu(index)}</NavLink>
               }} */}
 
-              <NavLink to="/breakfast" onClick={handleClearQry}>
+              <NavLink to="/B" onClick={handleClearQry}>
                 <li>Breakfast</li>
               </NavLink>
-              <NavLink to="/lunch" onClick={handleClearQry}>
+              <NavLink to="/L" onClick={handleClearQry}>
                 <li>Lunch</li>
               </NavLink>
-              <NavLink to="/blog" onClick={handleClearQry}>
+              <NavLink to="/D" onClick={handleClearQry}>
                 <li>Dinner</li>
               </NavLink>
-              <NavLink to="/dessert" onClick={handleClearQry}>
+              <NavLink to="/S" onClick={handleClearQry}>
                 <li>Dessert</li>
               </NavLink>
             </ReactBootStrap.NavDropdown>
