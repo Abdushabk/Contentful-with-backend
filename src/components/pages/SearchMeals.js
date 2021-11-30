@@ -1,26 +1,14 @@
 import { useState, useEffect } from "react";
 import Post from "../Post/post";
 import axios from "axios";
-import client from "../../client.js";
 
 const SearchMeals = ({ searchQry, handleClearQry }) => {
   const [posts, setPosts] = useState([]);
   const [total, setTotal] = useState(0);
+  // eslint-disable-next-line
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // client
-    //   .getEntries({ query: searchQry })
-    //   .then(({ items, total }) => {
-    //     setPosts(items);
-    //     setTotal(total);
-    //   })
-    //   .catch(() => {
-    //     setError(
-    //       "Oops! Something happened to this query. Please refresh and try again."
-    //     );
-    //   });
-
     (async () => {
       const recipes = await axios.get(
         "https://avc-food-blog.herokuapp.com/api/recipes/"

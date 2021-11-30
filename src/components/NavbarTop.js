@@ -4,10 +4,8 @@ import { NavLink } from "react-router-dom";
 
 const NavbarTop = ({ handleSearchClick, handleClearQry, categories }) => {
   let subMenu = [];
-  categories.map((element) => {
-    subMenu.push(element.name);
-  });
-  console.log(subMenu);
+  categories.map((element) => subMenu.push(element.name));
+
   return (
     <ReactBootStrap.Navbar bg="light" expand="lg" sticky="top">
       <ReactBootStrap.Container fluid>

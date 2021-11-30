@@ -5,6 +5,7 @@ import "./post.css";
 import "./cont.css";
 
 export default function Post({ post, handleClearQry }) {
+  // eslint-disable-next-line
   const [postToHTML, setPostToHTML] = useState("");
 
   useEffect(() => {

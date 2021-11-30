@@ -8,6 +8,7 @@ const SingleRecipe = () => {
   console.log({ id });
 
   const [recipies, setRecipies] = useState([]);
+  // eslint-disable-next-line
   const [error, setError] = useState(null);
 
   useEffect(() => {

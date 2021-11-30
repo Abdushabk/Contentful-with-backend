@@ -3,10 +3,12 @@ import { useParams } from "react-router-dom";
 import Post from "../Post/post";
 import axios from "axios";
 
-const MealTime = () => {
+const MealTime = ({ categories }) => {
   const { mealtime } = useParams();
   const [posts, setPosts] = useState([]);
+  // eslint-disable-next-line
   const [error, setError] = useState(null);
+  const [ctgName, setCtgName] = useState("");
 
   useEffect(() => {
     (async () => {
@@ -14,20 +16,35 @@ const MealTime = () => {
         "https://avc-food-blog.herokuapp.com/api/recipes/"
       );
       setPosts(recipes.data.tuples.filter(filterPosts));
-      console.log(recipes.data.tuples);
     })();
   }, [mealtime]);
 
   if (error) return <div>{error}</div>;
 
   const filterPosts = (post) => {
-    return mealtime[0] ? post.category === mealtime[0].toUpperCase() : true;
+    if (mealtime[0]) {
+      if (post.category === mealtime[0].toUpperCase()) {
+        setCtgName(catName(mealtime[0]).name);
+        return true;
+      } else return false;
+    } else {
+      return true;
+    }
+    // return mealtime[0] ? post.category === mealtime[0].toUpperCase() : true;
+  };
+
+  const catName = (id) => {
+    let found = categories.find(
+      (el) => el.category_id.toUpperCase() === id.toUpperCase()
+    );
+
+    return found;
   };
 
   return (
     <div className="mealContainer">
       <p>
-        We have {posts.length} entries for {mealtime}
+        We have {posts.length} entries for {ctgName}
       </p>
 
       {posts.map((post) => (

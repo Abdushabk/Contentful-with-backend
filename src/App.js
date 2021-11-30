@@ -20,7 +20,7 @@ function App() {
         "https://avc-food-blog.herokuapp.com/api/categories/"
       );
       await setCategories(results.data.tuples);
-      console.log(results.data.tuples);
+      // console.log(results.data.tuples);
     })();
   }, []);
 
@@ -49,8 +49,16 @@ function App() {
       ) : (
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/:mealtime" element={<MealTime />} />
-          <Route exact path="/recipe/:id" element={<SingleRecipe />} />
+          <Route
+            exact
+            path="/:mealtime"
+            element={<MealTime categories={categories} />}
+          />
+          <Route
+            exact
+            path="/recipe/:id"
+            element={<SingleRecipe categories={categories} />}
+          />
         </Routes>
       )}
     </>
