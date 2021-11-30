@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Contentful-with-backend/static/css/main.e95781a1.chunk.css",
+    "main.js": "/Contentful-with-backend/static/js/main.13007b68.chunk.js",
+    "main.js.map": "/Contentful-with-backend/static/js/main.13007b68.chunk.js.map",
+    "runtime-main.js": "/Contentful-with-backend/static/js/runtime-main.e5c6fb67.js",
+    "runtime-main.js.map": "/Contentful-with-backend/static/js/runtime-main.e5c6fb67.js.map",
+    "static/css/2.383c0125.chunk.css": "/Contentful-with-backend/static/css/2.383c0125.chunk.css",
+    "static/js/2.634e6dd4.chunk.js": "/Contentful-with-backend/static/js/2.634e6dd4.chunk.js",
+    "static/js/2.634e6dd4.chunk.js.map": "/Contentful-with-backend/static/js/2.634e6dd4.chunk.js.map",
+    "index.html": "/Contentful-with-backend/index.html",
+    "static/css/2.383c0125.chunk.css.map": "/Contentful-with-backend/static/css/2.383c0125.chunk.css.map",
+    "static/css/main.e95781a1.chunk.css.map": "/Contentful-with-backend/static/css/main.e95781a1.chunk.css.map",
+    "static/js/2.634e6dd4.chunk.js.LICENSE.txt": "/Contentful-with-backend/static/js/2.634e6dd4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e5c6fb67.js",
+    "static/css/2.383c0125.chunk.css",
+    "static/js/2.634e6dd4.chunk.js",
+    "static/css/main.e95781a1.chunk.css",
+    "static/js/main.13007b68.chunk.js"
+  ]
+}
