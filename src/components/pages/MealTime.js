@@ -50,6 +50,7 @@ const MealTime = ({ categories }) => {
       {posts.map((post) => (
         <Post key={post.slug} post={post} />
       ))}
+
     </div>
   );
 };

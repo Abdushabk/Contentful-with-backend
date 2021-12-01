@@ -4,7 +4,7 @@
 }
 
 .ul2{
-  margin-top: 100px;
+  margin-top: 150px;
   position: relative;
   list-style: none;
 }
@@ -15,13 +15,19 @@
   color: darkslategrey;
   list-style: none;
   position: relative;
-  margin-top: 40px;
+  margin-top: 100px;
   /* margin-left: 100px; */
   overflow-x: scroll;
   line-height: 30px;
   font-weight: bolder;
   font-family: "lora", serif;
+  padding: 25px;
   /* box-shadow: 2.5px 5px 9px  rgb(48, 47, 47); */
+}
+
+.ul:hover{
+ color: white;
+ background-color: darkslategray;
 }
 .ul1 {
   text-align: center;
@@ -29,14 +35,19 @@
   color: white;
   list-style: none;
   position: relative;
-  margin-top: 40px;
+  margin-top: 100px;
   /* margin-left: 350px; */
   line-height: 30px;
   font-weight: bolder;
   padding: 25px;
-  padding-top: 100px;
+  padding-top: 80px;
   font-family: "lora", serif;
   box-shadow: 2.5px 5px 9px rgb(48, 47, 47);
+}
+
+.ul1:hover{
+  color: darkslategrey;
+  background-color: white;
 }
 
 .ftImg {

@@ -9,6 +9,7 @@ import Home from "./components/pages/home/Home";
 import MealTime from "./components/pages/MealTime";
 import SingleRecipe from "./components/SingleRecipe";
 import SearchMeals from "./components/pages/SearchMeals";
+import CreateRecipe from "./components/createRecipe";
 
 function App() {
   const [searchQry, setSearchQry] = useState("");
@@ -48,6 +49,7 @@ function App() {
         <SearchMeals searchQry={searchQry} handleClearQry={handleClearQry} />
       ) : (
         <Routes>
+          <Route exact path="/create" element={<CreateRecipe/>}/>
           <Route exact path="/" element={<Home />} />
           <Route
             exact

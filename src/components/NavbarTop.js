@@ -34,7 +34,7 @@ const NavbarTop = ({ handleSearchClick, handleClearQry, categories }) => {
               <li>HOME</li>
             </ReactBootStrap.NavLink>
 
-            <ReactBootStrap.NavDropdown
+            <ReactBootStrap.NavDropdown style={{marginLeft: "50px"}}
               title="Sections"
               id="navbarScrollingDropdown"
             >
@@ -55,8 +55,11 @@ const NavbarTop = ({ handleSearchClick, handleClearQry, categories }) => {
                 <li>Dessert</li>
               </NavLink>
             </ReactBootStrap.NavDropdown>
-            <ReactBootStrap.Nav.Link href="/" onClick={handleClearQry}>
+            <ReactBootStrap.Nav.Link style={{marginLeft: "35px"}} href="/" onClick={handleClearQry}>
               Contact Us
+            </ReactBootStrap.Nav.Link>
+            <ReactBootStrap.Nav.Link style={{marginLeft: "50px"}}href="/create" onClick={handleClearQry}>
+              create recipe
             </ReactBootStrap.Nav.Link>
           </ReactBootStrap.Nav>
           <ReactBootStrap.Form className="d-flex">
