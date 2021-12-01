@@ -40,7 +40,7 @@ const NavbarTop = ({ handleSearchClick, handleClearQry, categories }) => {
               style={{
                 listStyle: "none",
                 textDecoration: "none",
-                marginLeft: "15px",
+                marginLeft: "40px",
                 marginRight: "20px",
                 color: "inherit",
               }}
