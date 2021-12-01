@@ -4,10 +4,8 @@ import { NavLink } from "react-router-dom";
 
 const NavbarTop = ({ handleSearchClick, handleClearQry, categories }) => {
   let subMenu = [];
-  categories.map((element) => {
-    subMenu.push(element.name);
-  });
-  console.log(subMenu);
+  categories.map((element) => subMenu.push(element.name));
+
   return (
     <ReactBootStrap.Navbar bg="light" expand="lg" sticky="top">
       <ReactBootStrap.Container fluid>
@@ -28,7 +26,7 @@ const NavbarTop = ({ handleSearchClick, handleClearQry, categories }) => {
               style={{
                 listStyle: "none",
                 textDecoration: "none",
-                marginLeft: "15px",
+                marginLeft: "50px",
                 marginRight: "20px",
                 color: "inherit",
               }}
@@ -50,7 +48,7 @@ const NavbarTop = ({ handleSearchClick, handleClearQry, categories }) => {
               <li>Login</li>
             </ReactBootStrap.NavLink>
 
-            <ReactBootStrap.NavDropdown
+            <ReactBootStrap.NavDropdown style={{marginLeft: "50px"}}
               title="Sections"
               id="navbarScrollingDropdown"
             >
@@ -71,8 +69,11 @@ const NavbarTop = ({ handleSearchClick, handleClearQry, categories }) => {
                 <li>Dessert</li>
               </NavLink>
             </ReactBootStrap.NavDropdown>
-            <ReactBootStrap.Nav.Link href="/" onClick={handleClearQry}>
+            <ReactBootStrap.Nav.Link style={{marginLeft: "35px"}} href="/" onClick={handleClearQry}>
               Contact Us
+            </ReactBootStrap.Nav.Link>
+            <ReactBootStrap.Nav.Link style={{marginLeft: "50px"}}href="/create" onClick={handleClearQry}>
+              create recipe
             </ReactBootStrap.Nav.Link>
           </ReactBootStrap.Nav>
           <ReactBootStrap.Form className="d-flex">

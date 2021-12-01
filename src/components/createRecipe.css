@@ -1,0 +1,69 @@
+.form {
+  text-align: center;
+  height: 800px;
+}
+
+.h22{
+  padding-top: 13px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: darkslategray;
+  color: white;
+  height: 70px;
+}
+form input.title {
+  height: 50px;
+  text-align: center;
+  margin-top: 20px;
+  width: 600px;
+  color: blue;
+}
+
+.category {
+  margin-top: 20px;
+  text-align: center;
+  width: 600px;
+  height: 50px;
+}
+
+.image {
+  width: 600px;
+  text-align: center;
+  margin-top: 20px;
+  height: 40px;
+}
+
+.ingredients {
+  text-align: center;
+  margin-top: 20px;
+  height: 180px;
+  width: 600px;
+}
+
+.recipe {
+  text-align: center;
+  margin-top: 20px;
+  height: 160px;
+  width: 600px;
+}
+
+.username {
+  text-align: center;
+  margin-top: 20px;
+  height: 50px;
+}
+
+form button.btns {
+  width: 150px;
+  height: 70px;
+  margin-top: 40px;
+  border-radius: 80px;
+  color: coral;
+  background-color: white;
+}
+
+.btns:hover {
+  background-color: coral;
+  color: white;
+}

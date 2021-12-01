@@ -10,6 +10,7 @@ import MealTime from "./components/pages/MealTime";
 import SingleRecipe from "./components/SingleRecipe";
 import SearchMeals from "./components/pages/SearchMeals";
 import Login from "./components/pages/Login";
+import CreateRecipe from "./components/createRecipe";
 
 function App() {
   const [searchQry, setSearchQry] = useState("");
@@ -21,7 +22,7 @@ function App() {
         "https://avc-food-blog.herokuapp.com/api/categories/"
       );
       await setCategories(results.data.tuples);
-      console.log(results.data.tuples);
+      // console.log(results.data.tuples);
     })();
   }, []);
 
@@ -49,11 +50,19 @@ function App() {
         <SearchMeals searchQry={searchQry} handleClearQry={handleClearQry} />
       ) : (
         <Routes>
+          <Route exact path="/create" element={<CreateRecipe/>}/>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/:mealtime" element={<MealTime />} />
-          <Route exact path="/recipe/:id" element={<SingleRecipe />} />
           <Route exact path="/Login" element={<Login />} />
-         
+          <Route
+            exact
+            path="/:mealtime"
+            element={<MealTime categories={categories} />}
+          />
+          <Route
+            exact
+            path="/recipe/:id"
+            element={<SingleRecipe categories={categories} />}
+          />
         </Routes>
       )}
     </>
