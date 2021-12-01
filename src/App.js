@@ -9,6 +9,7 @@ import Home from "./components/pages/home/Home";
 import MealTime from "./components/pages/MealTime";
 import SingleRecipe from "./components/SingleRecipe";
 import SearchMeals from "./components/pages/SearchMeals";
+import Login from "./components/pages/Login";
 import CreateRecipe from "./components/createRecipe";
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
         <Routes>
           <Route exact path="/create" element={<CreateRecipe/>}/>
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/Login" element={<Login />} />
           <Route
             exact
             path="/:mealtime"
