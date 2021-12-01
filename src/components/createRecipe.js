@@ -63,9 +63,9 @@ const CreateRecipe = () => {
                 <br />
                 <input className="image" type="text" placeholder="image" onChange={(event) => handle(event)} id="image" value={info.image}></input>
                 <br />
-                <input className="ingredients" type="text" placeholder="ingredients" onChange={(event) => handle(event)} id="ingredients" value={info.ingredients} ></input>
+                <textarea cols="40" rows="8" className="ingredients" type="text" placeholder="ingredients" onChange={(event) => handle(event)} id="ingredients" value={info.ingredients} ></textarea>
                 <br />
-                <input className="recipe" type="text" placeholder="recipe" onChange={(event) => handle(event)} id="recipe" value={info.recipe}></input>
+                <textarea cols="40" rows="8"className="recipe" type="text" placeholder="recipe" onChange={(event) => handle(event)} id="recipe" value={info.recipe}></textarea>
                 <br />
                 <input className="username" type="text" placeholder="username" onChange={(event) => handle(event)} id="username" value={info.username}></input>
                 <br />
