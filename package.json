@@ -2,7 +2,6 @@
   "name": "contentful-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Abdushabk.github.io/Contentful-with-backend/",
   "dependencies": {
     "@contentful/rich-text-html-renderer": "^15.8.0",
     "@testing-library/jest-dom": "^5.15.0",

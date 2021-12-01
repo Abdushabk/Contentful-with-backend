@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import * as ReactBootStrap from "react-bootstrap";
+
 //import {useHistory} from "react-router-dom";
-import Header from "../header/Header";
-import { Redirect } from "react-router-dom";
+
 import "./Login.css";
 import axios from "axios";
 

@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import axios from 'axios'
 import './createRecipe.css'
 
-// import { Redirect } from 'react-router-dom'
+
 
 const CreateRecipe = () => {
+    // const [error,setError] = useState("");
     const [info, setInfo] = useState({
         title: "",
         category: "",
@@ -13,6 +14,10 @@ const CreateRecipe = () => {
         recipe: "",
         username: "",
     })
+    
+
+  
+
     const handleSubmit = async (e) => {
         try {
             e.preventDefault();
@@ -33,10 +38,12 @@ const CreateRecipe = () => {
 
             ).then(res => console.log(res.data));
             console.log(data)
+            
         } catch (error) {
             console.log(error)
+            // setError("Created")
         }
-
+        
 
     };
     function handle(event) {
@@ -78,7 +85,10 @@ const CreateRecipe = () => {
                 <input className="username" type="text" placeholder="username" onChange={(event) => handle(event)} id="username" value={info.username}></input>
                 <br />
                 <button onClick={alert} className="btns">Submit</button>
+                
             </form>
+            {/* {(error != "") ? (<div className="error">{error}</div>) : ""} */}
+            
         </>
     );
 };
