@@ -35,6 +35,20 @@ const NavbarTop = ({ handleSearchClick, handleClearQry, categories }) => {
             >
               <li>HOME</li>
             </ReactBootStrap.NavLink>
+            <ReactBootStrap.NavLink
+              to="/"
+              href="/Login"
+              onClick={handleClearQry}
+              style={{
+                listStyle: "none",
+                textDecoration: "none",
+                marginLeft: "15px",
+                marginRight: "20px",
+                color: "inherit",
+              }}
+            >
+              <li>Login</li>
+            </ReactBootStrap.NavLink>
 
             <ReactBootStrap.NavDropdown
               title="Sections"
@@ -81,5 +95,6 @@ const NavbarTop = ({ handleSearchClick, handleClearQry, categories }) => {
     </ReactBootStrap.Navbar>
   );
 };
+
 
 export default NavbarTop;
