@@ -3,6 +3,15 @@
   height: 800px;
 }
 
+.h22{
+  padding-top: 13px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: darkslategray;
+  color: white;
+  height: 70px;
+}
 form input.title {
   height: 50px;
   text-align: center;

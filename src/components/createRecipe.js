@@ -47,6 +47,7 @@ const CreateRecipe = () => {
 
     return (
         <>
+            <h2 className="h22">Create a new recipe</h2>
             <form onSubmit={(e) => handleSubmit(e)} className="form">
                 <input className="title" type="text" placeholder="title" onChange={(event) => handle(event)} id="title" value={info.name}></input>
                 <br />
