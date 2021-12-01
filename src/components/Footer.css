@@ -12,7 +12,7 @@
 .ul {
   background-color: white;
   width: 600px;
-  color: darkslategrey;
+  color: black;
   list-style: none;
   position: relative;
   margin-top: 100px;
@@ -27,11 +27,11 @@
 
 .ul:hover{
  color: white;
- background-color: darkslategray;
+ background-color: #204A32;
 }
 .ul1 {
   text-align: center;
-  background-color: darkslategrey;
+  background-color: 204A32;
   color: white;
   list-style: none;
   position: relative;

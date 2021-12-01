@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from 'axios'
 import './createRecipe.css'
 
+// import { Redirect } from 'react-router-dom'
+
 const CreateRecipe = () => {
     const [info, setInfo] = useState({
         title: "",
@@ -44,6 +46,12 @@ const CreateRecipe = () => {
         console.log(newInfo)
     }
 
+    // const history = useHistory
+    const alert = () => {
+        window.alert('Wohoo!! recipe created successfully :), please check in the section were you have created the recipe')  
+    }
+    
+
 
     return (
         <>
@@ -65,11 +73,11 @@ const CreateRecipe = () => {
                 <br />
                 <textarea cols="40" rows="8" className="ingredients" type="text" placeholder="ingredients" onChange={(event) => handle(event)} id="ingredients" value={info.ingredients} ></textarea>
                 <br />
-                <textarea cols="40" rows="8"className="recipe" type="text" placeholder="recipe" onChange={(event) => handle(event)} id="recipe" value={info.recipe}></textarea>
+                <textarea cols="40" rows="8" className="recipe" type="text" placeholder="recipe" onChange={(event) => handle(event)} id="recipe" value={info.recipe}></textarea>
                 <br />
                 <input className="username" type="text" placeholder="username" onChange={(event) => handle(event)} id="username" value={info.username}></input>
                 <br />
-                <button className="btns">Submit</button>
+                <button onClick={alert} className="btns">Submit</button>
             </form>
         </>
     );
